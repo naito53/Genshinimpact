@@ -1,0 +1,96 @@
+
+.header_menu {
+    height: 50px;
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    background-color: black;
+}
+
+.header_menu h1 {
+    font-size: 20px;
+    color: white;
+    margin-right: auto; /* ヘッダーロゴを左寄せ */
+    margin-left:30px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* より強調された影 */
+    
+}
+
+.header_menu span{
+    color: red;
+}
+.header_search, .header_search_btn, .header_upload {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search {
+    width: 200px;
+    height: 25px;
+    margin-right: 5px;        
+}
+
+.header_search_btn button {
+    padding: 5px 10px;
+    margin-right: 50px; /* 検索ボタンと投稿ボタンの間の余白 */
+}
+
+.header_upload {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white; /* ボタンの背景色 */
+    margin-right:30px;
+}
+
+.header_upload {
+    padding: 8px 16px; /* ボタンのパディングを増やして目立たせる */
+    border-radius: 20px; /* 角を丸くしてモダンなデザインに */
+    background-color: #ff5252; /* 背景色を強調 */
+    color: white; /* テキストを白に設定 */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header_upload:hover {
+    background-color: #e04848; /* ホバー時に少し暗い色に */
+}
+
+.header_upload a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: white;
+}.body-header{
+    margin-left: 30px;
+    font-size: 50px;
+}
+.gallery-item {
+    display: inline-block;
+    margin: 30px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-wrap: wrap; /* 自動的に次の行に折り返し */
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.gallery-item li {
+    flex: 1 0 18%; /* 各画像を5枚ずつ並べるための幅に設定 */
+    margin: 10px;
+    position: relative; /* ポジションを設定し、オーバーレイの基準に */
+    overflow: hidden; /* 画像の範囲を超える部分を隠す */
+    transition: transform 0.3s ease; /* ホバー時のアニメーションを追加 */
+}
+
+.gallery-item li:hover {
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像をコンテナにフィット */
+    border-radius: 12px; /* 角を丸くして、ソフトな印象に */
+}

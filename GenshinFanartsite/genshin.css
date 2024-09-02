@@ -1,0 +1,240 @@
+
+
+.header_menu {
+    height: 50px;
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    background-color: black;
+}
+
+.header_menu h1 {
+    font-size: 20px;
+    color: white;
+    margin-right: auto; /* ヘッダーロゴを左寄せ */
+    margin-left:30px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* より強調された影 */
+    
+}
+
+.header_menu span{
+    color: red;
+}
+.header_search, .header_search_btn, .header_upload {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* 検索ボタン */
+.header_search_btn {
+    padding: 5px 10px;
+    margin-right: 50px;
+    border: none; /* ボタンのデフォルトスタイルを削除 */
+    background-color: transparent; /* 背景を透明に */
+    cursor: pointer; /* カーソルをポインターに */
+}
+
+.header_search_btn i {
+    font-size: 18px; /* アイコンのサイズ */
+    color: white; /* アイコンの色 */
+}
+
+.search {
+    width: 200px;
+    height: 25px;
+    margin-right: 5px;        
+}
+
+.header_search_btn button {
+    padding: 5px 10px;
+    margin-right: 50px; /* 検索ボタンと投稿ボタンの間の余白 */
+}
+
+.header_upload {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white; /* ボタンの背景色 */
+    margin-right:30px;
+}
+
+.header_upload {
+    padding: 8px 16px; /* ボタンのパディングを増やして目立たせる */
+    border-radius: 20px; /* 角を丸くしてモダンなデザインに */
+    background-color: #ff5252; /* 背景色を強調 */
+    color: white; /* テキストを白に設定 */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header_upload:hover {
+    background-color: #e04848; /* ホバー時に少し暗い色に */
+}
+
+.header_upload a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: white;
+}
+.main-page-header1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-80%, -20%);
+    font-size: 130px;
+}
+
+.background-image{
+    width: 100%;
+    height: 100%;
+}
+.main-page-header1 span{
+    color: red;
+}
+
+
+.main-page-header2{
+    font-size: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+/* サイトの説明 */
+.description-icon{
+    float:right;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-right: 300px;
+}
+
+.description-icon{
+    text-align: center;
+    margin-top: 0px;
+    
+}
+.description-icon img {
+    max-width: 70%; /* 画像の幅を親要素の幅に合わせる */
+    height: auto; /* アスペクト比を保ちながら高さを自動調整 */
+    display: block; /* 余白をなくすためにブロック要素にする */
+    margin: 0 auto; /* 画像を中央揃え */
+}
+
+.gallery-title1{
+    font-size: 50px;
+    margin-left: 30px
+}
+/* ギャラリー */
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+#load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+.gallery-title a {
+    font-size: 18px; /* フォントサイズを少し大きく */
+    padding: 8px 16px; /* ボタンの内側に余白を追加 */
+    color: #007BFF; /* テキストの色を設定 */
+    text-decoration: none; /* リンクの下線を削除 */
+    border: 1px solid #007BFF; /* シンプルなボーダーを追加 */
+    display: inline-block; /* ボタンをインラインブロックにする */
+    background-color: transparent; /* 背景色を透明にしてシンプルに */
+}
+
+.gallery-title a:hover {
+    color: #0056b3; /* ホバー時のテキスト色を少し濃く */
+    border-color: #0056b3; /* ホバー時のボーダー色を変更 */
+}
+
+
+
+
+
+
+.gallery-title {
+    display: flex;
+    justify-content: space-between; /* タイトルとリンクを両端に配置 */
+    align-items: center; /* 垂直方向で中央に揃える */
+}
+
+.gallery-title p {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.gallery-title a {
+    margin-right: 100px; /* 右端からのマージンを調整 */
+    text-decoration: none; /* リンクの下線を消す */
+    color: #007BFF; /* リンクの色を変更（必要に応じて） */
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: space-between; /* 各画像の間にスペースを入れる */
+    list-style-type: none; /* li要素のデフォルトのマーカーを削除 */
+    padding: 0;
+    margin: 20px 0; /* ギャラリーの上下のマージンを設定 */
+}
+
+.gallery-item li {
+    flex: 1; /* 各画像の幅を均等に設定 */
+    margin: 0 10px; /* 画像間にスペースを設ける */
+}
+
+.gallery-item img {
+    width: 100%; /* 画像を親要素にフィットさせる */
+    height: auto; /* 画像の縦横比を保持する */
+    border-radius: 8px; /* 画像の角を少し丸くする */
+    height:280px
+}
+.gallery-item {
+    display: flex;
+    flex-wrap: wrap; /* 自動的に次の行に折り返し */
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.gallery-item li {
+    flex: 1 0 18%; /* 各画像を5枚ずつ並べるための幅に設定 */
+    margin: 10px;
+    position: relative; /* ポジションを設定し、オーバーレイの基準に */
+    overflow: hidden; /* 画像の範囲を超える部分を隠す */
+    transition: transform 0.3s ease; /* ホバー時のアニメーションを追加 */
+}
+
+.gallery-item li:hover {
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像をコンテナにフィット */
+    border-radius: 12px; /* 角を丸くして、ソフトな印象に */
+}
+
+
+.gallery-title a {
+    font-size: 20px; /* フォントサイズを大きく */
+    padding: 12px 24px; /* ボタンを大きくするためのパディング */
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-title a:hover {
+    background-color: #0056b3; /* ホバー時の色変更 */
+}

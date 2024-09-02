@@ -1,0 +1,113 @@
+.header_menu {
+    height: 50px;
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    background-color: black;
+}
+
+.header_menu h1 {
+    font-size: 20px;
+    color: white;
+    margin-right: auto; /* ヘッダーロゴを左寄せ */
+    margin-left:30px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* より強調された影 */
+    
+}
+
+.header_menu span{
+    color: red;
+}
+.header_search, .header_search_btn, .header_upload {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search {
+    width: 200px;
+    height: 25px;
+    margin-right: 5px;        
+}
+
+.header_search_btn button {
+    padding: 5px 10px;
+    margin-right: 50px; /* 検索ボタンと投稿ボタンの間の余白 */
+}
+
+.header_upload {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white; /* ボタンの背景色 */
+    margin-right:30px;
+}
+
+.header_upload {
+    padding: 8px 16px; /* ボタンのパディングを増やして目立たせる */
+    border-radius: 20px; /* 角を丸くしてモダンなデザインに */
+    background-color: #ff5252; /* 背景色を強調 */
+    color: white; /* テキストを白に設定 */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header_upload:hover {
+    background-color: #e04848; /* ホバー時に少し暗い色に */
+}
+
+.header_upload a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: white;
+}
+
+.post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post-container label {
+    font-size: 14px; /* ラベルのフォントサイズを小さく */
+    color: #555;
+    display: block;
+    margin: 0 0 5px 0; /* 上と下のマージンを設定 */
+    font-weight: bold;
+}
+
+.post-container input[type="text"],
+.post-container textarea,
+.post-container input[type="file"] {
+    width: calc(100% - 20px); /* 左右の余白を均一にするために幅を調整 */
+    padding: 8px;
+    margin: 0 auto 15px auto; /* 左右均等のマージン */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: calc(100% - 20px); /* ボタンの左右の余白を均等に */
+    margin: 0 auto; /* ボタンを中央揃え */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
